@@ -1,0 +1,246 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InAmigos Foundation</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        header h1{
+            font-size:40px;
+            margin-bottom:10px;
+        }
+
+        nav{
+            background:#084298;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        section{
+            padding:40px 20px;
+            max-width:1100px;
+            margin:auto;
+        }
+
+        .about, .impact, .cta{
+            background:white;
+            margin-bottom:20px;
+            padding:25px;
+            border-radius:10px;
+        }
+
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .project-card{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .project-card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .project-card h3{
+            margin:15px 0 10px;
+            color:#0d6efd;
+        }
+
+        .impact{
+            text-align:center;
+        }
+
+        .impact-box{
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+            margin-top:20px;
+        }
+
+        .impact-item{
+            margin:15px;
+        }
+
+        .impact-item h2{
+            color:#0d6efd;
+            font-size:35px;
+        }
+
+        .cta{
+            text-align:center;
+            background:#0d6efd;
+            color:white;
+        }
+
+        .cta button{
+            padding:12px 25px;
+            border:none;
+            background:white;
+            color:#0d6efd;
+            font-size:16px;
+            border-radius:5px;
+            cursor:pointer;
+            margin-top:15px;
+        }
+
+        footer{
+            background:#084298;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>InAmigos Foundation</h1>
+        <p>Uniting Minds for Change</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#impact">Impact</a>
+        <a href="#join">Join Us</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Our NGO</h2>
+        <br>
+        <p>
+            InAmigos Foundation is a Section 8 registered non-profit organization
+            founded in 2020. The NGO works towards education, women empowerment,
+            food distribution, animal welfare, environmental sustainability,
+            and skill development across India.
+        </p>
+        <br>
+        <p>
+            Our mission is to empower communities and create a better future
+            through compassion, awareness, and social action.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2 style="text-align:center; margin-bottom:30px;">Our Ongoing Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74" alt="Education">
+                <h3>Project Bachpanshala</h3>
+                <p>
+                    Providing quality education, digital literacy, and learning
+                    support for underprivileged children.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c" alt="Food Distribution">
+                <h3>Project Seva</h3>
+                <p>
+                    Distributing food, clothes, and essential supplies to needy
+                    families and homeless people.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Women Empowerment">
+                <h3>Project Udaan</h3>
+                <p>
+                    Empowering women through skill development, education,
+                    and financial independence programs.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1" alt="Environment">
+                <h3>Project Prakriti</h3>
+                <p>
+                    Promoting environmental awareness through tree plantation
+                    drives and sustainability initiatives.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="impact" class="impact">
+        <h2>Our Social Impact</h2>
+
+        <div class="impact-box">
+
+            <div class="impact-item">
+                <h2>50,000+</h2>
+                <p>Beneficiaries Helped</p>
+            </div>
+
+            <div class="impact-item">
+                <h2>200+</h2>
+                <p>Active Volunteers</p>
+            </div>
+
+            <div class="impact-item">
+                <h2>28</h2>
+                <p>States Reached</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="join" class="cta">
+        <h2>Be the Change!</h2>
+        <p>
+            Join our mission to build a compassionate and empowered society.
+            Volunteer, donate, or spread awareness today.
+        </p>
+
+        <button>Join Us</button>
+    </section>
+
+    <footer>
+        <p>© 2026 InAmigos Foundation | #InAmigos</p>
+    </footer>
+
+</body>
+</html>
+```
