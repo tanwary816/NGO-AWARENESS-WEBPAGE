@@ -1,292 +1,458 @@
-```css
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
+/* Deep Emerald & Lime Green Color Theme (Ref: WhatsApp Image 2026-05-28 at 3.41.35 PM.jpeg) */
+:root {
+    --bg-dark: #03140e; /* Deep emerald-black background */
+    --green-gradient: linear-gradient(180deg, #041d14 0%, #020d09 100%);
+    --lime-primary: #b1f054; /* Bright lime green accent buttons */
+    --lime-gradient: linear-gradient(90deg, #b1f054, #79cd36);
+    --card-border-green: rgba(177, 240, 84, 0.15);
+    --text-light: #ffffff;
+    --text-muted: #8fa09a;
+    --card-bg: rgba(6, 32, 23, 0.6);
 }
 
-body{
-    background:#07121f;
-    color:white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* NAVBAR */
-
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:#0d1b2a;
-    position:sticky;
-    top:0;
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
 }
 
-.logo h2{
-    color:#00d4ff;
+/* Header Navigation Layout */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: rgba(3, 20, 14, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.nav-links{
-    display:flex;
-    list-style:none;
-    gap:30px;
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    transition:0.3s;
+.logo-icon {
+    width: 38px;
+    height: 38px;
+    background: var(--lime-gradient);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-links a:hover{
-    color:#00d4ff;
+.icon-people {
+    font-size: 18px;
 }
 
-.donate-btn{
-    padding:10px 20px;
-    border:none;
-    border-radius:30px;
-    background:#00d4ff;
-    color:#07121f;
-    font-weight:600;
-    cursor:pointer;
+.logo-text h1 {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
 }
 
-/* HERO SECTION */
-
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:80px 8%;
-    min-height:90vh;
-    background:linear-gradient(to right,#07121f,#102542);
+.logo-text span {
+    display: block;
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.hero-left{
-    width:50%;
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
-.tag{
-    background:#123;
-    display:inline-block;
-    padding:8px 15px;
-    border-radius:20px;
-    margin-bottom:20px;
-    color:#00d4ff;
+nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.hero-left h1{
-    font-size:70px;
-    line-height:90px;
+nav ul li a:hover {
+    color: var(--lime-primary);
 }
 
-.hero-left span{
-    color:#00d4ff;
+.btn-nav-donate {
+    background: var(--lime-gradient);
+    padding: 10px 24px;
+    border-radius: 25px;
+    color: #03140e;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: transform 0.2s;
 }
 
-.hero-text{
-    margin-top:20px;
-    line-height:28px;
-    color:#cfd8dc;
-    width:80%;
+.btn-nav-donate:hover {
+    transform: scale(1.05);
 }
 
-.hero-buttons{
-    margin-top:30px;
+/* Hero Section Styles */
+.hero {
+    background: var(--green-gradient);
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 85vh;
 }
 
-.join-btn,
-.work-btn{
-    padding:14px 28px;
-    border:none;
-    border-radius:30px;
-    margin-right:15px;
-    cursor:pointer;
-    font-size:16px;
+.hero-content {
+    max-width: 580px;
 }
 
-.join-btn{
-    background:#00d4ff;
-    color:#07121f;
+.badge {
+    background: rgba(177, 240, 84, 0.1);
+    color: var(--lime-primary);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 25px;
+    border: 1px solid rgba(177, 240, 84, 0.25);
+    font-weight: 500;
 }
 
-.work-btn{
-    background:transparent;
-    border:2px solid #00d4ff;
-    color:white;
+.hero-content h2 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 25px;
 }
 
-/* HERO RIGHT */
-
-.hero-right{
-    width:40%;
-    display:flex;
-    justify-content:center;
+.highlight-green {
+    display: block;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--text-light);
 }
 
-.circle{
-    width:320px;
-    height:320px;
-    border-radius:50%;
-    background:radial-gradient(circle,#00d4ff,#0077b6,#07121f);
-    box-shadow:0 0 50px #00d4ff;
+.text-lime {
+    color: var(--lime-primary);
+    font-weight: 600;
 }
 
-/* IMPACT SECTION */
-
-.impact-section{
-    padding:80px 8%;
-    text-align:center;
+.hero-content p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-size: 17px;
 }
 
-.impact-section h2{
-    font-size:45px;
-    margin-bottom:50px;
-    color:#00d4ff;
+.hero-buttons {
+    display: flex;
+    gap: 15px;
 }
 
-.impact-cards{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
+.btn-primary {
+    background: var(--lime-gradient);
+    color: #03140e;
+    padding: 14px 32px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 4px 20px rgba(177, 240, 84, 0.25);
 }
 
-.card{
-    background:#102542;
-    padding:40px;
-    width:250px;
-    border-radius:20px;
-    transition:0.3s;
+.btn-secondary {
+    background: transparent;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 500;
 }
 
-.card:hover{
-    transform:translateY(-10px);
+/* Stunning CSS 3D Earth Vector Construction (Ref: Earth layout from image) */
+.hero-visual {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card h1{
-    color:#00d4ff;
-    font-size:45px;
+.glow-sphere-green {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(177, 240, 84, 0.25) 0%, rgba(3, 20, 14, 0) 70%);
+    border-radius: 50%;
 }
 
-/* CTA SECTION */
-
-.cta-section{
-    text-align:center;
-    padding:100px 8%;
-    background:linear-gradient(to right,#0077b6,#00d4ff);
-    color:#07121f;
+.earth-container {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    box-shadow: inset -30px -30px 60px rgba(0,0,0,0.9), 
+                inset 10px 10px 40px rgba(177, 240, 84, 0.4),
+                0 0 50px rgba(177, 240, 84, 0.3);
+    background: #093c26 url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: hue-rotate(60deg) brightness(0.85) contrast(1.2); /* Adjusts default map texture to glowing emerald green */
+    animation: rotateEarth 40s linear infinite;
 }
 
-.cta-section h1{
-    font-size:60px;
+@keyframes rotateEarth {
+    from { background-position: 0 0; }
+    to { background-position: 640px 0; }
 }
 
-.cta-section p{
-    margin-top:20px;
-    font-size:18px;
+.earth-overlay-content {
+    z-index: 10;
+    text-align: center;
+    transform: filter(none);
+    filter: hue-rotate(-60deg) brightness(1.2); /* Corrects inner badge element hues back to true lime green */
 }
 
-.cta-buttons{
-    margin-top:35px;
+.heart-handshake {
+    font-size: 50px;
+    filter: drop-shadow(0 0 10px rgba(177,240,84,0.8));
 }
 
-.volunteer-btn,
-.donation-btn{
-    padding:14px 30px;
-    border:none;
-    border-radius:30px;
-    margin:10px;
-    cursor:pointer;
-    font-size:16px;
-    font-weight:600;
+.earth-brand-tag {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 
-.volunteer-btn{
-    background:#07121f;
-    color:white;
+/* Impact Metrics Section */
+.impact-section {
+    padding: 100px 8%;
+    text-align: center;
+    background: #020d09;
 }
 
-.donation-btn{
-    background:white;
-    color:#07121f;
+.section-tag {
+    color: var(--lime-primary);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
 }
 
-/* FOOTER */
-
-footer{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    padding:60px 8%;
-    background:#0d1b2a;
+.impact-section h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
-.footer-box{
-    width:300px;
-    margin-bottom:30px;
+.section-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 60px;
+    font-size: 16px;
 }
 
-.footer-box h2,
-.footer-box h3{
-    margin-bottom:20px;
-    color:#00d4ff;
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
 }
 
-.footer-box ul{
-    list-style:none;
+.stat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border-green);
+    padding: 45px 25px;
+    border-radius: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
-.footer-box ul li{
-    margin-bottom:10px;
+.stat-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(177, 240, 84, 0.4);
+    box-shadow: 0 10px 25px rgba(4, 29, 20, 0.5);
 }
 
-.footer-box p{
-    color:#cfd8dc;
-    line-height:28px;
+.card-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
-/* RESPONSIVE */
+.stat-number {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
 
-@media(max-width:900px){
+.stat-label {
+    font-size: 15px;
+    color: var(--text-light);
+    font-weight: 600;
+}
 
-    .hero{
-        flex-direction:column;
-        text-align:center;
+.stat-sublabel {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 5px;
+}
+
+/* Call-To-Action Banner */
+.cta-banner {
+    background: linear-gradient(135deg, #062b1e 0%, #020d09 100%);
+    border-top: 1px solid var(--card-border-green);
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.cta-banner h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.cta-banner p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-size: 16px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-white {
+    background: var(--lime-gradient);
+    color: #03140e;
+    padding: 14px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-transparent {
+    background: transparent;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Footer Section Rules */
+footer {
+    background: #010705;
+    padding: 70px 8% 40px;
+    font-size: 14px;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(177, 240, 84, 0.05);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-brand p {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.footer-social-icons {
+    margin-top: 20px; 
+    font-size: 18px;
+    letter-spacing: 10px;
+}
+
+.footer-col h4 {
+    color: var(--text-light);
+    margin-bottom: 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: var(--lime-primary);
+}
+
+.contact-item {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 35px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 13px;
+}
+
+/* Fluid Configuration for Mobile views */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
     }
-
-    .hero-left{
-        width:100%;
+    .hero-content h2 {
+        font-size: 44px;
     }
-
-    .hero-right{
-        width:100%;
-        margin-top:50px;
+    .hero-buttons, .cta-buttons {
+        flex-direction: column;
+        align-items: center;
     }
-
-    .hero-text{
-        width:100%;
+    .hero-visual {
+        width: 100%;
+        height: 380px;
+        margin-top: 50px;
     }
-
-    .hero-left h1{
-        font-size:50px;
-        line-height:65px;
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
-
-    .navbar{
-        flex-direction:column;
-        gap:20px;
+    header {
+        flex-direction: column;
+        gap: 15px;
     }
-
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    footer{
-        flex-direction:column;
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
-```
