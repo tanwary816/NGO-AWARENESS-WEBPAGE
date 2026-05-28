@@ -1,0 +1,144 @@
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* Navigation */
+nav{
+    background:#084298;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Sections */
+section{
+    padding:40px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.about,
+.impact,
+.cta{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+/* Projects */
+.title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.projects{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.project-card{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.project-card h3{
+    margin:15px 0 10px;
+    color:#0d6efd;
+}
+
+/* Impact */
+.impact{
+    text-align:center;
+}
+
+.impact-box{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.impact-box h1{
+    color:#0d6efd;
+    font-size:40px;
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+    background:#0d6efd;
+    color:white;
+}
+
+.cta button{
+    margin-top:15px;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    background:white;
+    color:#0d6efd;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.cta button:hover{
+    background:yellow;
+}
+
+/* Footer */
+footer{
+    background:#084298;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+```
