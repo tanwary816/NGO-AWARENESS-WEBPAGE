@@ -1,162 +1,164 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InAmigos NGO</title>
-
-  <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InAmigos - Friends in Humanity | NGO Awareness Campaign</title>
+    <!-- Links to our updated green theme stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo-area">
+            <!-- Glowing green icon matching the new layout -->
+            <div class="logo-icon">
+                <span class="icon-people">👥</span>
+            </div>
+            <div class="logo-text">
+                <h1>InAmigos</h1>
+                <span>Friends In Humanity</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#stories">Stories</a></li>
+            </ul>
+        </nav>
+        <a href="#donate" class="btn-nav-donate">Donate Now 💚</a>
+    </header>
 
-  <nav class="navbar">
+    <!-- Hero Section / Introduction (Ref: WhatsApp Image 2026-05-28 at 3.41.35 PM.jpeg) -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <span class="badge">🍃 Registered NGO · Est. 2012 · 40+ Nations</span>
+            <h2>We Are <span class="highlight-green">Friends in Humanity</span></h2>
+            <p>InAmigos unites hearts across borders — building schools, healing communities, and restoring dignity for <span class="text-lime">millions of lives</span> who deserve better.</p>
+            <div class="hero-buttons">
+                <a href="#volunteer" class="btn-primary">Join Our Mission →</a>
+                <a href="#projects" class="btn-secondary">► Our Work</a>
+            </div>
+        </div>
 
-    <div class="logo">
-      <h2>InAmigos</h2>
-    </div>
+        <!-- 3D Styled Glowing Earth Graphic Area -->
+        <div class="hero-visual">
+            <div class="glow-sphere-green"></div>
+            <div class="earth-container">
+                <div class="earth-photo">
+                    <!-- The shaking hands emblem overlaid on the center of the earth -->
+                    <div class="earth-overlay-content">
+                        <div class="heart-handshake">💚</div>
+                        <p class="earth-brand-tag">IN AMIGOS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <ul class="nav-links">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Impact</a></li>
-      <li><a href="#">Volunteer</a></li>
-      <li><a href="#">Gallery</a></li>
-    </ul>
+    <!-- Impact & Metrics Section (Ref: WhatsApp Image 2026-05-28 at 3.41.35 PM.jpeg) -->
+    <section class="impact-section" id="impact">
+        <span class="section-tag">— BY THE NUMBERS —</span>
+        <h2>Impact That <span>Speaks Loudly</span></h2>
+        <p class="section-subtitle">Every number is a life. Every statistic is a story. Here is 12 years of love in action.</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="card-icon">👥</div>
+                <div class="stat-number">2.8M+</div>
+                <div class="stat-label">Lives Transformed</div>
+                <div class="stat-sublabel">Across 40+ countries</div>
+            </div>
+            <div class="stat-card">
+                <div class="card-icon">📖</div>
+                <div class="stat-number">1K+</div>
+                <div class="stat-label">Schools Built</div>
+                <div class="stat-sublabel">Since 2012</div>
+            </div>
+            <div class="stat-card">
+                <div class="card-icon">💧</div>
+                <div class="stat-number">$210M+</div>
+                <div class="stat-label">Funds Raised</div>
+                <div class="stat-sublabel">100% Transparent</div>
+            </div>
+            <div class="stat-card">
+                <div class="card-icon">🤝</div>
+                <div class="stat-number">18K+</div>
+                <div class="stat-label">Amigos Volunteers</div>
+                <div class="stat-sublabel">Making a difference</div>
+            </div>
+        </div>
+    </section>
 
-    <button class="donate-btn">Donate</button>
+    <!-- Call To Action Section -->
+    <section class="cta-banner" id="volunteer">
+        <h2>Ready to Become an InAmigo?</h2>
+        <p>Join 18,000 volunteers across 65 cities. Every small act of friendship creates a wave of lasting change.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn-white">👋 Volunteer Today</a>
+            <a href="#" class="btn-transparent">💚 Make a Donation</a>
+        </div>
+    </section>
 
-  </nav>
-
-  <!-- HERO SECTION -->
-
-  <section class="hero">
-
-    <div class="hero-left">
-
-      <p class="tag">Registered NGO • Est. 2012</p>
-
-      <h1>
-        Together For <br>
-        <span>Humanity</span>
-      </h1>
-
-      <p class="hero-text">
-        InAmigos works to empower communities through education,
-        healthcare, women empowerment, and environmental sustainability.
-      </p>
-
-      <div class="hero-buttons">
-        <button class="join-btn">Join Mission</button>
-        <button class="work-btn">Our Work</button>
-      </div>
-
-    </div>
-
-    <div class="hero-right">
-
-      <div class="circle"></div>
-
-    </div>
-
-  </section>
-
-  <!-- IMPACT SECTION -->
-
-  <section class="impact-section">
-
-    <h2>Impact That Matters</h2>
-
-    <div class="impact-cards">
-
-      <div class="card">
-        <h1>2.8M+</h1>
-        <p>Lives Helped</p>
-      </div>
-
-      <div class="card">
-        <h1>1K+</h1>
-        <p>Schools Built</p>
-      </div>
-
-      <div class="card">
-        <h1>210M</h1>
-        <p>Funds Raised</p>
-      </div>
-
-      <div class="card">
-        <h1>18K+</h1>
-        <p>Volunteers</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- CTA SECTION -->
-
-  <section class="cta-section">
-
-    <h1>Ready To Make Change?</h1>
-
-    <p>
-      Become a volunteer and help us create a brighter future.
-    </p>
-
-    <div class="cta-buttons">
-      <button class="volunteer-btn">Volunteer Today</button>
-      <button class="donation-btn">Make Donation</button>
-    </div>
-
-  </section>
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <div class="footer-box">
-
-      <h2>InAmigos</h2>
-
-      <p>
-        We believe every person deserves dignity,
-        opportunity, and support.
-      </p>
-
-    </div>
-
-    <div class="footer-box">
-
-      <h3>Programs</h3>
-
-      <ul>
-        <li>Education</li>
-        <li>Healthcare</li>
-        <li>Women Rights</li>
-        <li>Climate Action</li>
-      </ul>
-
-    </div>
-
-    <div class="footer-box">
-
-      <h3>Contact</h3>
-
-      <p>New Delhi, India</p>
-      <p>+91 9876543210</p>
-      <p>support@inamigos.org</p>
-
-    </div>
-
-  </footer>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-area">
+                    <div class="logo-icon">👥</div>
+                    <div class="logo-text">
+                        <h1 style="color:white;">InAmigos</h1>
+                        <span>Friends In Humanity</span>
+                    </div>
+                </div>
+                <p>We believe every person deserves dignity, opportunity, and a friend in their corner. Join our family across 42 nations.</p>
+                <p class="footer-social-icons">🌐 📸 💼 🎥 👤</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#about">→ About InAmigos</a></li>
+                    <li><a href="#projects">→ Our Projects</a></li>
+                    <li><a href="#impact">→ Impact Numbers</a></li>
+                    <li><a href="#volunteer">→ Volunteer</a></li>
+                    <li><a href="#stories">→ Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="#">→ Education</a></li>
+                    <li><a href="#">→ Healthcare</a></li>
+                    <li><a href="#">→ Clean Water</a></li>
+                    <li><a href="#">→ Women's Rights</a></li>
+                    <li><a href="#">→ Climate Action</a></li>
+                    <li><a href="#">→ Disaster Relief</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <div class="contact-item">
+                    <strong>📍 Location:</strong><br>
+                    12 Amigos Avenue, Humanity Square, New Delhi, India 110001
+                </div>
+                <div class="contact-item">
+                    <strong>📞 Phone:</strong><br>
+                    +91 98765 43210
+                </div>
+                <div class="contact-item">
+                    <strong>✉️ Email:</strong><br>
+                    hello@inamigos.org
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 InAmigos NGO Campaign - Developed for #InAmigos Awareness Project.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
-```
-
